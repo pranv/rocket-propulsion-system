@@ -5,7 +5,7 @@ A composable, constraint-based model for rocket engine systems built in Python. 
 ## Features
 
 - **Modular Component Design**: Define tanks, pumps, combustion chambers, nozzles, and other components independently
-- **Automatic Constraint Solving**: Uses SymPy to automatically solve complex thermodynamic and fluid dynamics equations
+- **Automatic Constraint Solving**: Uses SymPy to automatically solve thermodynamic and fluid dynamics equations
 - **Performance Analysis**: Calculate thrust, specific impulse, mass flow rates, and other key metrics
 - **Engineering Validation**: Built-in constraint validation for realistic rocket designs
 - **Extensible Architecture**: Easy to add new component types and constraints
@@ -91,17 +91,6 @@ fuel_pump = Pump(
 )
 ```
 
-## Engineering Validation
-
-The system includes comprehensive constraint validation:
-
-- ✅ Thrust target achievement (±1kN tolerance)
-- ✅ Specific impulse range (300-450s for chemical rockets)
-- ✅ Thrust-to-weight ratio > 1.0
-- ✅ Reasonable chamber pressure (1-20 MPa)
-- ✅ Optimal O/F ratio (4-8 for LOX/LH2)
-- ✅ Adequate pump pressure gain
-- ✅ Realistic nozzle expansion ratio (10-100)
 
 ## Requirements
 
@@ -156,16 +145,3 @@ The simulator implements fundamental rocket equations:
 - **Pump Power**: P = Δp × V̇ / η
 - **Mass Conservation**: Propellant flow balance
 - **Energy Conservation**: Thermodynamic cycle analysis
-
-## License
-
-This project is open source. Feel free to use, modify, and distribute.
-
-## Contributing
-
-Contributions welcome! Areas for improvement:
-- Additional propellant types
-- More sophisticated nozzle models
-- Heat transfer calculations
-- Cooling system modeling
-- Multi-stage rocket support 
